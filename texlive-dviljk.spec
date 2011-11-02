@@ -11,9 +11,8 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(post):	texlive-tlpkg
 Requires:	texlive-dviljk.bin
-Provides:	texlive-dvilj = %{version}
-Obsoletes:	tetex-dvilj <= 3.0
-Conflicts:	tetex-dvilj <= 3.0
+Provides:	tetex-dvilj
+Provides:	texlive-dvilj = 20111101
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
 
