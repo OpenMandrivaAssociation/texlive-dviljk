@@ -15,7 +15,7 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dviljk.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dviljk.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
 Requires:	texlive-dviljk.bin
 Provides:	tetex-dvilj
 Provides:	texlive-dvilj = 20111101
