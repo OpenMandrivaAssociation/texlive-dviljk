@@ -17,8 +17,8 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires:	texlive-dviljk.bin
-Provides:	tetex-dvilj
-Provides:	texlive-dvilj = 20111101
+%rename tetex-dvilj
+%rename texlive-dvilj
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
 
