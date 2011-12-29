@@ -19,8 +19,6 @@ Requires(pre):	texlive-tlpkg
 Requires:	texlive-dviljk.bin
 %rename tetex-dvilj
 %rename texlive-dvilj
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 A dvi driver for the LaserJet printers, using kpathsea
@@ -43,7 +41,6 @@ available from the TeX-Live source tree.
 %doc %{_texmfdir}/doc/man/man1/dvilj4l.man1.pdf
 %doc %{_mandir}/man1/dvilj6.1*
 %doc %{_texmfdir}/doc/man/man1/dvilj6.man1.pdf
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,5 +53,3 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
