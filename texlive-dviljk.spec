@@ -53,3 +53,27 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
+
+
+%changelog
+* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.6p4-4
++ Revision: 812236
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.6p4-3
++ Revision: 751196
+- Rebuild to reduce used resources
+
+* Sun Nov 13 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.6p4-2
++ Revision: 730333
+- Use rename macro instead of mix of provides/conflicts/obsoletes
+- Use rename macro instead of mix of provides/conflicts/obsoletes
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.6p4-1
++ Revision: 718280
+- texlive-dviljk
+- texlive-dviljk
+- texlive-dviljk
+- texlive-dviljk
+- texlive-dviljk
+
