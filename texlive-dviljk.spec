@@ -1,4 +1,4 @@
-# revision 26689
+# revision 29764
 # category TLCore
 # catalog-ctan /dviware/dviljk
 # catalog-date 2012-04-21 09:41:15 +0200
@@ -6,7 +6,7 @@
 # catalog-version 2.6p4
 Name:		texlive-dviljk
 Version:	2.6p4
-Release:	4
+Release:	5
 Summary:	DVI to Laserjet output
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dviljk
@@ -30,17 +30,17 @@ available from the TeX-Live source tree.
 #-----------------------------------------------------------------------
 %files
 %doc %{_mandir}/man1/dvihp.1*
-%doc %{_texmfdir}/doc/man/man1/dvihp.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/dvihp.man1.pdf
 %doc %{_mandir}/man1/dvilj.1*
-%doc %{_texmfdir}/doc/man/man1/dvilj.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/dvilj.man1.pdf
 %doc %{_mandir}/man1/dvilj2p.1*
-%doc %{_texmfdir}/doc/man/man1/dvilj2p.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/dvilj2p.man1.pdf
 %doc %{_mandir}/man1/dvilj4.1*
-%doc %{_texmfdir}/doc/man/man1/dvilj4.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/dvilj4.man1.pdf
 %doc %{_mandir}/man1/dvilj4l.1*
-%doc %{_texmfdir}/doc/man/man1/dvilj4l.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/dvilj4l.man1.pdf
 %doc %{_mandir}/man1/dvilj6.1*
-%doc %{_texmfdir}/doc/man/man1/dvilj6.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/dvilj6.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,30 +50,6 @@ available from the TeX-Live source tree.
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.6p4-4
-+ Revision: 812236
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.6p4-3
-+ Revision: 751196
-- Rebuild to reduce used resources
-
-* Sun Nov 13 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.6p4-2
-+ Revision: 730333
-- Use rename macro instead of mix of provides/conflicts/obsoletes
-- Use rename macro instead of mix of provides/conflicts/obsoletes
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.6p4-1
-+ Revision: 718280
-- texlive-dviljk
-- texlive-dviljk
-- texlive-dviljk
-- texlive-dviljk
-- texlive-dviljk
-
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
