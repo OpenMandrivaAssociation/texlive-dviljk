@@ -6,7 +6,7 @@
 # catalog-version 2.6p4
 Name:		texlive-dviljk
 Version:	2.6p4
-Release:	11
+Release:	12
 Summary:	DVI to Laserjet output
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dviljk
