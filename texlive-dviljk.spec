@@ -1,18 +1,12 @@
-# revision 33736
-# category TLCore
-# catalog-ctan /dviware/dviljk
-# catalog-date 2012-04-21 09:41:15 +0200
-# catalog-license gpl
-# catalog-version 2.6p4
 Name:		texlive-dviljk
-Version:	2.6p4
-Release:	15
+Version:	52851
+Release:	1
 Summary:	DVI to Laserjet output
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dviljk
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dviljk.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dviljk.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dviljk.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dviljk.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -44,7 +38,7 @@ available from the TeX-Live source tree.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
