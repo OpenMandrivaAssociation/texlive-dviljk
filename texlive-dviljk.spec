@@ -1,6 +1,6 @@
 Name:		texlive-dviljk
-Version:	52851
-Release:	2
+Version:	66186
+Release:	1
 Summary:	DVI to Laserjet output
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dviljk
